@@ -211,7 +211,7 @@ Direkte Brücke zu echter Geräteintegration (Integration Engineer, Testingenieu
 | Backend       | Python 3.11, Flask, NumPy, SciPy, scikit-learn   |
 | Frontend      | HTML5, Plotly.js, JavaScript (vanilla)           |
 | Kryptographie | pyca/cryptography                                |
-| Deployment    | IONOS VPS, Ubuntu 24, Plesk, systemd             |
+| Deployment    | VPS, Ubuntu 24, Plesk, systemd             |
 | Versionierung | Git, GitHub                                      |
 | Signal-Demo   | Synthetische IQ-Daten (NumPy), reale CSV-Uploads |
 
@@ -223,7 +223,7 @@ Direkte Brücke zu echter Geräteintegration (Integration Engineer, Testingenieu
 
 - Python 3.10+
 - Ubuntu 20.04+ (oder lokal auf Windows mit WSL)
-- Optional: IONOS VPS mit Plesk
+- Optional: VPS mit Plesk
 
 ### Lokale Installation (Hinweis an mich! Sehr Wichtiger Abschnit!)
 
@@ -249,20 +249,9 @@ python main.py
 
 Im Browser öffnen: `http://localhost:5000`
 
-### VPS Deployment (IONOS Ubuntu + Plesk. Hinweis an mich! Sehr Wichtiger Abschnit! [ ] Docker-Deployment ist hier wichtig, offener Punkt !)
+### VPS Deployment (Ubuntu + Plesk. Hinweis an mich! Sehr Wichtiger Abschnit! [ ] Docker-Deployment ist hier wichtig, offener Punkt !)
 
 ```bash
-# Auf VPS (SSH)
-cd ~/www
-# Ordner mit sudo erstellen:
-sudo mkdir rands_project
-# Besitz und Rechte anpassen: Damit du später als webadmin oder www-data im Ordner arbeiten kannst, solltest du die Rechte setzen:
-sudo chown webadmin:www-data rands_project
-sudo chmod 775 rands_project
-# Optional: Rechte für Unterordner setzen. Falls du später Unterordner oder Dateien erstellst, kannst du rekursiv die Rechte setzen:
-sudo chown -R webadmin:www-data rands_project
-sudo chmod -R 775 rands_project
-cd ~/rands_project
 
 # Virtual Environment erstellen (richtig !)
 python3 -m venv venv
@@ -363,7 +352,7 @@ sudo systemctl start rands-dashboard
 sudo systemctl status rands-dashboard
 ```
 
-### Auf meinem IONOS Domäne account die subdomäne für maazi.de angelegt "rands.maazi.de" erstellt (ssl schützen).
+### Auf meinem Domäne account die subdomäne für maazi.de angelegt "rands.maazi.de" erstellt (ssl schützen).
 
 ### In Plesk auch die subdomäne angelegt.
 
