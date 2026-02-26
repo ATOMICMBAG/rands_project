@@ -8,10 +8,26 @@ Ein webbasiertes, modulares Analyse- und Visualisierungs-Dashboard für Software
 
 ## Motivation
 
-Bei einem Unternehmen habe ich über 11 Jahre mit HF-Messtechnik, Front- und Backendmessungen,
-Testdatensätzen und Filtercharakteristiken für RFFE-Bauteile gearbeitet. Dieses Projekt zeigt,
-wie dieses Domänenwissen mit eigenständig erarbeiteten KI- und Automatisierungsfähigkeiten verbinde,
-um praxisnahe Werkzeuge für SDR-Analyse, Testautomatisierung und Signalverarbeitung zu bauen.
+SDR Spectrum Intelligence Dashboard – mein neues End‑to‑End Analyse‑ und Visualisierungstool für Rohde & Schwarz‑nahe Messtechnik\*\*
+
+Nach über 11 Jahren HF‑Messtechnik, RFFE‑Filtercharakterisierung und Testautomatisierung habe ich ein vollständiges, modulares SDR‑Analyse‑Dashboard entwickelt.
+
+Das Projekt zeigt, wie ich **HF‑Domänenwissen**, **Python/Flask‑Entwicklung**, **Signalverarbeitung**, **SCPI‑Automatisierung** und **KI‑gestützte Analyse** zu einem professionellen Web‑Tool kombiniere.
+
+**Highlights:**
+
+- **Spektrum‑Viewer**: FFT, Wasserfall, Fensterfunktionen wie bei R&S‑FSW/FSVR [rands.maazi.de](https://rands.maazi.de)
+- **Signalanalyse**: SNR, Bandbreite, Modulationserkennung (AM/FM/CW)
+- **KI‑Anomalie‑Detektor**: IsolationForest erkennt Interferenzen im Spektrum
+- **Protokoll‑Decoder**: OSI Layer 2/3/4 Parsing ohne externe Libraries
+- **Security/PKI‑Demo**: X.509, RSA‑Signatur, AES‑Verschlüsselung
+- **R&S‑SCPI‑Mock**: VNA & Spektrumanalysator‑Simulation, PyVISA‑ready
+- **Echtzeit‑Signalstream**: Live‑FFT via WebSocket (500 ms Updates)
+- **Avionik‑Frequenzplan**: VHF/UHF‑Bänder für ATC, NAV, Mode‑S, ADS‑B
+
+Technologien: **Python 3.11, Flask, NumPy, SciPy, scikit‑learn, Plotly.js, cryptography, WebSockets, systemd, Plesk, Ubuntu 24**.
+
+Das Dashboard ist vollständig produktionsbereit (HTTPS, Gunicorn, Reverse Proxy) und zeigt, wie moderne SDR‑Software aussehen kann.
 
 ---
 
@@ -61,13 +77,25 @@ um praxisnahe Werkzeuge für SDR-Analyse, Testautomatisierung und Signalverarbei
 │   │   └── sec_index.html
 │   └── static/
 │
-└── 6_hw_interface/          # [FERTIG] R&S Messgeräte REST-API Stub
+├── 6_hw_interface/          # [FERTIG] R&S Messgeräte REST-API Stub
     ├── app.py
     ├── mock_devices/
     │   ├── vna_mock.py      # R&S ZVA/ZNB Simulator
     │   └── spectrum_mock.py # R&S FSW Simulator
     ├── templates/
     │   └── hw_index.html
+    └── static/
+│
+├── 7_realtime_stream/       # [FERTIG] Echtzeit-Signalstream via WebSocket
+│   ├── app.py
+│   ├── templates/
+│   │   └── stream_index.html
+│   └── static/
+│
+└── 8_avionics_bands/        # [FERTIG] Avionik-Frequenzplan (NATO/ICAO)
+    ├── app.py
+    ├── templates/
+    │   └── avionic_index.html
     └── static/
 ```
 
@@ -95,6 +123,8 @@ um praxisnahe Werkzeuge für SDR-Analyse, Testautomatisierung und Signalverarbei
 **R&S-Bezug:** Exakt die Signaldarstellung, die R&S-Messgeräte wie FSW oder FSVR liefern.
 Zeigt Verständnis von Spektralanalyse und Messtechnik-Grundlagen.
 
+![Demo Screenshot](assets/modul_1.jpeg)
+
 ---
 
 ### Modul 2 – Signalanalyse (2_signal_analysis)
@@ -115,6 +145,8 @@ Zeigt Verständnis von Spektralanalyse und Messtechnik-Grundlagen.
 
 **R&S-Bezug:** Entspricht den Grundfunktionen eines R&S-Signalanalysators.
 Domänenwissen aus Qualcomm-Messarbeit (Filtercharakteristik, SNR-Optimierung).
+
+![Demo Screenshot](assets/modul_2.jpeg)
 
 ---
 
@@ -138,6 +170,8 @@ Domänenwissen aus Qualcomm-Messarbeit (Filtercharakteristik, SNR-Optimierung).
 **R&S-Bezug:** KI-gestützte Testanalyse ist ein wachsendes Feld bei R&S (SDR-Testautomatisierung).
 Direkte Verbindung zu "Eigeninitiativ KI-Tools entwickelt" aus Zeugnis (Qualcomm).
 
+![Demo Screenshot](assets/modul_3.jpeg)
+
 ---
 
 ### Modul 4 – Protokoll-Decoder Demo (4_protocol_decoder)
@@ -160,6 +194,8 @@ Direkte Verbindung zu "Eigeninitiativ KI-Tools entwickelt" aus Zeugnis (Qualcomm
 
 **R&S-Bezug:** Direkt relevant für "Softwareentwickler Protokollsoftware Avionik" (OSI 2-4 Kenntnisse).
 
+![Demo Screenshot](assets/modul_4.jpeg)
+
 ---
 
 ### Modul 5 – Security-Checker Demo (5_security_checker)
@@ -179,6 +215,8 @@ Direkte Verbindung zu "Eigeninitiativ KI-Tools entwickelt" aus Zeugnis (Qualcomm
 - Frontend: Schritt-für-Schritt Visualisierung der kryptographischen Operationen
 
 **R&S-Bezug:** Adressiert direkt "Software Developer Security Protocol" (PKI, Kryptographie, SmartCards).
+
+![Demo Screenshot](assets/modul_5.jpeg)
 
 ---
 
@@ -202,6 +240,56 @@ Direkte Verbindung zu "Eigeninitiativ KI-Tools entwickelt" aus Zeugnis (Qualcomm
 **R&S-Bezug:** Zeigt Verständnis der R&S-Messgeräte-Schnittstellen (SCPI).
 Direkte Brücke zu echter Geräteintegration (Integration Engineer, Testingenieur).
 
+![Demo Screenshot](assets/modul_6.jpeg)
+
+---
+
+### Modul 7 – Echtzeit-Signalstream (7_realtime_stream)
+
+**Status:** [erledigt] funktioniert gut
+
+**Was es zeigt:**
+
+- Live-SDR-Spektrum via WebSocket mit 500ms Updates
+- Echtzeit-FFT-Berechnung und interaktive Spektrum-Darstellung
+- Dynamische Parametersteuerung (Gain, Frequenzbereich, FFT-Größe)
+- WebSocket-Secure (wss://) für verschlüsselte Echtzeit-Übertragung
+
+**Technisch:**
+
+- Backend: Python/Flask, Flask-SocketIO, NumPy FFT
+- Frontend: Plotly.js mit WebSocket-Integration für Live-Daten
+- Performance: Optimiert für geringe Latenz und hohe Update-Raten
+
+**R&S-Bezug:** Zeigt moderne Echtzeit-SDR-Technologie und WebSocket-Integration.
+Direkte Anwendung für Live-Messdaten-Streaming in professionellen Umgebungen.
+
+![Demo Screenshot](assets/modul_7.jpeg)
+
+---
+
+### Modul 8 – Avionik-Frequenzplan (8_avionics_bands)
+
+**Status:** [erledigt] funktioniert gut
+
+**Was es zeigt:**
+
+- Interaktive Visualisierung der Avionik-Frequenzbänder (VHF/UHF)
+- NATO/ICAO-konforme Frequenzpläne für ATC, NAV, Mode S, ADS-B
+- Detaillierte Band-Informationen mit Frequenzbereichen und Anwendungen
+- Such- und Filterfunktionen für spezifische Frequenzbereiche
+
+**Technisch:**
+
+- Backend: Python/Flask, JSON-Datenbank mit Avionik-Frequenzen
+- Frontend: Interaktive Karte mit Plotly.js und Suchfunktionen
+- Daten: Offizielle NATO/ICAO-Frequenzpläne für Luftfahrt
+
+**R&S-Bezug:** Direkt relevant für Avionik-Messungen und Luftfahrt-Kommunikation.
+Zeigt Verständnis der spezifischen Anforderungen in der Luftfahrt-Branche.
+
+![Demo Screenshot](assets/modul_8.jpeg)
+
 ---
 
 ## Tech-Stack
@@ -211,7 +299,8 @@ Direkte Brücke zu echter Geräteintegration (Integration Engineer, Testingenieu
 | Backend       | Python 3.11, Flask, NumPy, SciPy, scikit-learn   |
 | Frontend      | HTML5, Plotly.js, JavaScript (vanilla)           |
 | Kryptographie | pyca/cryptography                                |
-| Deployment    | VPS, Ubuntu 24, Plesk, systemd             |
+| Echtzeit      | Flask-SocketIO, WebSockets                       |
+| Deployment    | VPS, Ubuntu 24, Plesk, systemd                   |
 | Versionierung | Git, GitHub                                      |
 | Signal-Demo   | Synthetische IQ-Daten (NumPy), reale CSV-Uploads |
 
@@ -423,6 +512,8 @@ matplotlib>=3.8.0
 pandas>=2.2.0
 cryptography>=42.0.0
 joblib>=1.3.0
+flask-socketio>=5.3.0
+eventlet>=0.33.0
 
 ```
 
