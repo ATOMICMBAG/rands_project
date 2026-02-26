@@ -123,7 +123,7 @@ Das Dashboard ist vollständig produktionsbereit (HTTPS, Gunicorn, Reverse Proxy
 **R&S-Bezug:** Exakt die Signaldarstellung, die R&S-Messgeräte wie FSW oder FSVR liefern.
 Zeigt Verständnis von Spektralanalyse und Messtechnik-Grundlagen.
 
-![Demo Screenshot](assets/modul_1.jpeg)
+![Demo Screenshot](modules/modul_1.jpeg)
 
 ---
 
@@ -146,7 +146,7 @@ Zeigt Verständnis von Spektralanalyse und Messtechnik-Grundlagen.
 **R&S-Bezug:** Entspricht den Grundfunktionen eines R&S-Signalanalysators.
 Domänenwissen aus Qualcomm-Messarbeit (Filtercharakteristik, SNR-Optimierung).
 
-![Demo Screenshot](assets/modul_2.jpeg)
+![Demo Screenshot](modules/modul_2.jpeg)
 
 ---
 
@@ -170,7 +170,7 @@ Domänenwissen aus Qualcomm-Messarbeit (Filtercharakteristik, SNR-Optimierung).
 **R&S-Bezug:** KI-gestützte Testanalyse ist ein wachsendes Feld bei R&S (SDR-Testautomatisierung).
 Direkte Verbindung zu "Eigeninitiativ KI-Tools entwickelt" aus Zeugnis (Qualcomm).
 
-![Demo Screenshot](assets/modul_3.jpeg)
+![Demo Screenshot](modules/modul_3.jpeg)
 
 ---
 
@@ -194,7 +194,7 @@ Direkte Verbindung zu "Eigeninitiativ KI-Tools entwickelt" aus Zeugnis (Qualcomm
 
 **R&S-Bezug:** Direkt relevant für "Softwareentwickler Protokollsoftware Avionik" (OSI 2-4 Kenntnisse).
 
-![Demo Screenshot](assets/modul_4.jpeg)
+![Demo Screenshot](modules/modul_4.jpeg)
 
 ---
 
@@ -216,7 +216,7 @@ Direkte Verbindung zu "Eigeninitiativ KI-Tools entwickelt" aus Zeugnis (Qualcomm
 
 **R&S-Bezug:** Adressiert direkt "Software Developer Security Protocol" (PKI, Kryptographie, SmartCards).
 
-![Demo Screenshot](assets/modul_5.jpeg)
+![Demo Screenshot](modules/modul_5.jpeg)
 
 ---
 
@@ -240,7 +240,7 @@ Direkte Verbindung zu "Eigeninitiativ KI-Tools entwickelt" aus Zeugnis (Qualcomm
 **R&S-Bezug:** Zeigt Verständnis der R&S-Messgeräte-Schnittstellen (SCPI).
 Direkte Brücke zu echter Geräteintegration (Integration Engineer, Testingenieur).
 
-![Demo Screenshot](assets/modul_6.jpeg)
+![Demo Screenshot](modules/modul_6.jpeg)
 
 ---
 
@@ -264,7 +264,7 @@ Direkte Brücke zu echter Geräteintegration (Integration Engineer, Testingenieu
 **R&S-Bezug:** Zeigt moderne Echtzeit-SDR-Technologie und WebSocket-Integration.
 Direkte Anwendung für Live-Messdaten-Streaming in professionellen Umgebungen.
 
-![Demo Screenshot](assets/modul_7.jpeg)
+![Demo Screenshot](modules/modul_7.jpeg)
 
 ---
 
@@ -288,7 +288,7 @@ Direkte Anwendung für Live-Messdaten-Streaming in professionellen Umgebungen.
 **R&S-Bezug:** Direkt relevant für Avionik-Messungen und Luftfahrt-Kommunikation.
 Zeigt Verständnis der spezifischen Anforderungen in der Luftfahrt-Branche.
 
-![Demo Screenshot](assets/modul_8.jpeg)
+![Demo Screenshot](modules/modul_8.jpeg)
 
 ---
 
