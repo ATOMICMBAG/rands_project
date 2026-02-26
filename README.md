@@ -1,7 +1,5 @@
 # SDR Spectrum Intelligence Dashboard
 
-## Hiring Project – Rohde & Schwarz | Besem Maazi | rands.maazi.de
-
 Ein webbasiertes, modulares Analyse- und Visualisierungs-Dashboard für Software Defined Radio (SDR) Daten.
 
 > **Live Demo:** [https://rands.maazi.de](https://rands.maazi.de)
