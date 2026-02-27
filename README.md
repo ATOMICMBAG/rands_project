@@ -314,7 +314,7 @@ Zeigt Verständnis der spezifischen Anforderungen in der Luftfahrt-Branche.
 - Ubuntu 20.04+ (oder lokal auf Windows mit WSL)
 - Optional: VPS mit Plesk
 
-### Lokale Installation (Hinweis an mich! Sehr Wichtiger Abschnit!)
+### Lokale Installation
 
 ```bash
 # Repository klonen
@@ -338,7 +338,7 @@ python main.py
 
 Im Browser öffnen: `http://localhost:5000`
 
-### VPS Deployment (Ubuntu + Plesk. Hinweis an mich! Sehr Wichtiger Abschnit! [ ] Docker-Deployment ist hier wichtig, offener Punkt !)
+### VPS Deployment
 
 ```bash
 
@@ -441,13 +441,7 @@ sudo systemctl start rands-dashboard
 sudo systemctl status rands-dashboard
 ```
 
-### Auf meinem Domäne account die subdomäne für maazi.de angelegt "rands.maazi.de" erstellt (ssl schützen).
-
-### In Plesk auch die subdomäne angelegt.
-
-### In der subdomäne die Apache zusätzliche Anweisung für http und https gesetzt.
-
-### Einstellungen für Apache & nginx für rands.maazi.de/
+### subdomäne angelegt "rands.maazi.de" erstellt (ssl schützen auch in Plesk o.ä. &Apache).
 
 ### Zusätzliche Anweisungen für HTTP:
 
@@ -461,23 +455,15 @@ ProxyPass / http://127.0.0.1:5001/
 ProxyPassReverse / http://127.0.0.1:5001/
 ```
 
-### Zusätzliche Anweisungen für HTTPS:
+### für HTTPS:
 
 ```
-ProxyPreserveHost On
-ProxyRequests Off
-
-Header always unset X-Frame-Options
-
-ProxyPass / http://127.0.0.1:5001/
-ProxyPassReverse / http://127.0.0.1:5001/
-
 RequestHeader set X-Forwarded-Proto "https"
 ```
 
 ### Testen
 
-Rufe https://rands.maazi.de
+https://rands.maazi.de
 
 # Oder als systemd-Service (empfohlen)
 
