@@ -466,9 +466,8 @@ RequestHeader set X-Forwarded-Proto "https"
 https://rands.maazi.de
 
 # Oder als systemd-Service (empfohlen)
-
+```
 sudo systemctl start rands-dashboard
-
 ```
 
 python main.py
