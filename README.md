@@ -474,7 +474,7 @@ python main.py
 Erreichbar unter: `https://rands.maazi.de`
 
 **HTTPS-Sicherheit:**
-Die Anwendung läuft über HTTPS mit SSL/TLS-Verschlüsselung (Let's Encrypt Zertifikat, automatisch via Plesk).
+Die Anwendung läuft über HTTPS mit SSL/TLS-Verschlüsselung (provider wildcard Zertifikat, automatisch via Plesk).
 Dies gewährleistet:
 
 - Verschlüsselte Datenübertragung zwischen Browser und Server
