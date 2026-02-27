@@ -378,7 +378,7 @@ Description=SDR Spectrum Intelligence Dashboard
 After=network.target
 
 [Service]
-User=webadmin
+User=user
 Group=www-data
 WorkingDirectory=/var/www/rands_project
 Environment="PATH=/var/www/rands_project/venv/bin"
@@ -420,7 +420,7 @@ Description=SDR Spectrum Intelligence Dashboard
 After=network.target
 
 [Service]
-User=webadmin
+User=user
 Group=www-data
 WorkingDirectory=/var/www/rands_project
 Environment="PATH=/var/www/rands_project/venv/bin"
