@@ -144,7 +144,7 @@ Zeigt Verständnis von Spektralanalyse und Messtechnik-Grundlagen.
 - Frontend: Tabellarische Ergebnisdarstellung + Diagramme
 
 **R&S-Bezug:** Entspricht den Grundfunktionen eines R&S-Signalanalysators.
-Domänenwissen aus Qualcomm-Messarbeit (Filtercharakteristik, SNR-Optimierung).
+Domänenwissen aus Messarbeit (Filtercharakteristik, SNR-Optimierung).
 
 ![Demo Screenshot](modules/modul_2.jpeg)
 
@@ -168,7 +168,6 @@ Domänenwissen aus Qualcomm-Messarbeit (Filtercharakteristik, SNR-Optimierung).
 - Frontend: Plotly.js mit Anomalie-Overlay
 
 **R&S-Bezug:** KI-gestützte Testanalyse ist ein wachsendes Feld bei R&S (SDR-Testautomatisierung).
-Direkte Verbindung zu "Eigeninitiativ KI-Tools entwickelt" aus Zeugnis (Qualcomm).
 
 ![Demo Screenshot](modules/modul_3.jpeg)
 
